@@ -1,0 +1,26 @@
+﻿<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE struts PUBLIC
+    "-//Apache Software Foundation//DTD Struts Configuration 2.0//EN"
+    "http://struts.apache.org/dtds/struts-2.0.dtd">
+
+<struts>
+	<!--  Setting configuration constants -->
+     <constant name="struts.devMode" value="false" />
+    <constant name="struts.ui.theme" value="xhtml" />
+    <constant name="struts.ui.templateDir" value="template" />
+    <constant name="struts.custom.i18n.resources" value="global" />
+    <constant name="struts.action.extension" value="action,," />
+    <constant name="struts.enable.SlashesInActionNames" value="false" />
+    <constant name="struts.mapper.alwaysSelectFullNamespace" value="false" />
+    <constant name="struts.convention.action.suffix" value="Action" />
+    <constant name="struts.convention.result.path" value="/" />
+    <constant name="struts.convention.action.disableJarScanning" value="true" />
+    <constant name="struts.enable.DynamicMethodInvocation" value="true" />
+    
+     <package name="default" extends="struts-default">
+
+	</package>
+	
+	<package name="jms" namespace="/jms" extends="default" />
+
+</struts>
